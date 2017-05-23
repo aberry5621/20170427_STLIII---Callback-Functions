@@ -38,11 +38,11 @@ int main() {
     cout << "Before sorting...\n";
     copy(myVec.begin(), myVec.end(), ostream_iterator<int>(cout, " "));
     
-    cout << "\n\n\Sorted in non-increasing order...\n";
+    cout << "\n\nSorted in non-increasing order...\n";
     bubbleSortFn(myVec, &compare_lt);
     copy(myVec.begin(), myVec.end(), ostream_iterator<int>(cout, " < "));
     
-    cout << "\n\n\Sorted in non-decreasing order...\n";
+    cout << "\n\nSorted in non-decreasing order...\n";
     bubbleSortFn(myVec, &compare_gt);
     copy(myVec.begin(), myVec.end(), ostream_iterator<int>(cout, " > "));
     
@@ -69,8 +69,6 @@ void bubbleSortFn(vector<int> &vec, bool(*compareFn)(int x, int y)) {
     } 
 }
 
-
-
 #elif(prog == 2)
 
 /*
@@ -83,10 +81,6 @@ void bubbleSortFn(vector<int> &vec, bool(*compareFn)(int x, int y)) {
  maintained as the “state” of your function object
  */
 
-//Gavin Erezuma
-//4-27-2017
-// Lab 1
-
 #include<iostream>
 #include<vector>
 #include<algorithm>
@@ -94,7 +88,6 @@ void bubbleSortFn(vector<int> &vec, bool(*compareFn)(int x, int y)) {
 #include<iterator>
 
 using namespace std;
-
 
 class fibo
 {
@@ -124,7 +117,5 @@ int main()
     
     return 0;
 }
-
-
 
 #endif
